@@ -6,5 +6,7 @@ createPlot1<-function(){
     library(data.table)
     consumption <-fread("household_power_consumption.txt", na.string="?")
     c<- consumption[Date=="1/2/2007" | Date=="2/2/2007"]
+    png("plot1.png")
     hist(c$Global_active_power,main="Global Active Power", col="red",xlab="Global Active Power(kilowatts)")
+    dev.off()
 }
