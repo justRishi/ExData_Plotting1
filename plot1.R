@@ -1,5 +1,5 @@
 
-    ## Download only needed one time, so commented out download an d unzip after first use
+## Download only needed one time, so you can comment out download and unzip after first use
     download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip","consumption.zip")
     unzip("consumption.zip")
     
